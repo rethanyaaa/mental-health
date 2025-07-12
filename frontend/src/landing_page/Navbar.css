@@ -74,7 +74,7 @@
   bottom: 0;
   height: 100%;
   width: 0%;
-  background-color: #007bff;
+  background-color:  #010066;
   z-index: -1;
   transition: width 0.4s ease;
 }

@@ -66,22 +66,15 @@ const Navbar = () => {
               </li>
                <li className="nav-item">
                 <Link to="/support" className="nav-link px-2 appointment-btn">
-            Book an Appointment
+            BOOK AN APPOINTMENT
              </Link>
-
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link px-2 dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i className="fa-solid fa-bars"></i>
-                </a>
-                
+                <li className="nav-item">
+                <Link to="/support" className="nav-link px-2 appointment-btn">
+             SIGN IN
+             </Link>
               </li>
+              
             </ul>
           </div>
         </div>

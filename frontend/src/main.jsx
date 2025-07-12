@@ -5,6 +5,7 @@ import Navbar from "./landing_page/Navbar.jsx";
 import React from 'react';
 
 import './index.css'
+import HomePage from './landing_page/home/homePage.jsx';
  
 function ScrollToTop() {
   const location = useLocation();
@@ -21,7 +22,7 @@ createRoot(document.getElementById('root')).render(
      <Navbar/>
     <ScrollToTop /> {/* Add ScrollToTop here */}
     <Routes>
-      
+      <Route path="/" element={<HomePage />} />
     </Routes>
    
   </BrowserRouter>
