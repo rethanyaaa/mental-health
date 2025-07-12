@@ -1,0 +1,87 @@
+                                                     /* Styling for the navbar */
+.navbar {
+    background-color: #fff !important; /* Light gray */
+  transition: background-color 0.3s ease;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #333;
+  font-size: 1rem; /* Adjusted to smaller font size */
+  font-weight: 500;
+  padding: 6px 10px; /* Reduced padding for compactness */
+  transition: color 0.3s ease;
+  margin: 0 35px 0 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1458d6;
+}
+
+/* Navbar brand (logo) */
+.navbar-brand img {
+  width: 120px; /* Smaller logo */
+  height: auto;
+}
+
+ 
+/* Navbar fixed at top */
+.fixed-top {
+  z-index: 1050;
+}
+
+/* Add shadow to navbar */
+.navbar-light {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 100px; /* Smaller logo for small screens */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.75rem; /* Even smaller font size on mobile */
+  }
+}
+
+ 
+/* Remove the arrow icon after the dropdown button */
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.appointment-btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: 500;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.appointment-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #007bff;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.appointment-btn:hover {
+  color: #ffffff !important;
+}
+.appointment-btn:hover::before {
+  width: 100% !important;
+}
